@@ -1,0 +1,174 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+span {
+    display: inline-block;
+    margin-right: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+button {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: #5d00ff;
+    color: #fff;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+section > div {
+    margin-bottom: 3rem;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+section:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+blockquote {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer img {
+    width: 80px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+footer i {
+    font-size: 1.5rem;
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+footer i:hover {
+    transform: scale(1.2);
+    color: #aaa;
+}
+
+/* Cards or grid layout for profiles and tutorials */
+main section > div > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+main section > div > div > div {
+    flex: 1 1 200px;
+    text-align: center;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Star icons */
+.fa-star {
+    color: gold;
+    margin: 0 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    main section > div > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
