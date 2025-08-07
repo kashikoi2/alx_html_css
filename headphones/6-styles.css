@@ -1,0 +1,39 @@
+.pentagons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.pentagon {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: #ff6565;
+  clip-path: polygon(
+    50% 0%,
+    100% 38%,
+    82% 100%,
+    18% 100%,
+    0% 38%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.pentagon .value {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.pentagon .label {
+  font-size: 14px;
+  margin-top: 4px;
+}

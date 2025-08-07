@@ -1,0 +1,60 @@
+/* What We Do Section */
+.what-we-do {
+  background-color: white;
+  color: black;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.what-we-do h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 60px;
+}
+
+.icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.icon-item {
+  flex: 1 1 calc(25% - 40px);
+  min-width: 200px;
+}
+
+.icon {
+  font-size: 4rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.icon-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.icon-item p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 768px) {
+  .icon-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-item {
+    width: 100%;
+    max-width: 400px;
+  }
+}

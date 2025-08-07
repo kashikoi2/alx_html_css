@@ -1,0 +1,36 @@
+/* Animations for 'What we do...' */
+.features .feature {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.features .feature:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Animations for 'Our results' */
+.pentagon {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.pentagon:hover {
+  transform: rotate(3deg) scale(1.1);
+  opacity: 0.95;
+}
+
+/* (Optional) Animate in on load */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.features .feature,
+.pentagon {
+  animation: fadeInUp 1s ease forwards;
+}
